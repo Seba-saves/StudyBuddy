@@ -1,22 +1,26 @@
 package com.example.study_buddy
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
-import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    private var isMainLayout = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-/*
-        val Name = findViewById<EditText>(R.id.editText)
-        val submitButton = findViewById<Button>(R.id.submitButton)
-        submitButton.setOnClickListener{
-            display
-        }
 
- */
+        val switchLayoutButton = findViewById<Button>(R.id.button_switch_layout)
+        switchLayoutButton.setOnClickListener {
+            switchLayout()
+        }
+    }
+
+    private fun switchLayout() {
+        isMainLayout = !isMainLayout
+        val newLayout = if (isMainLayout) R.layout.activity_main else R.layout.home
+        setContentView(newLayout)
     }
 }

@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="StudyBuddy"
@@ -18,19 +19,35 @@
         app:layout_constraintVertical_bias="0.024" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="description..."
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="246dp" />
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="338dp"
+        android:text="Lorem ipsum dolor sit amet, sed at convenire forensibus eloquentiam, eu duo omnis constituam. Id nam dictas prompta meliore, eum ferri aperiam interesset ea, agam aeterno noluisse no vix. Elit efficiendi cu pri. Eos sapientem intellegat ea, fugit putent dolores id sed. Nec choro torquatos id.  Eruditi propriae definitionem pri id. Mel vocent phaedrum reprehendunt ei. Quaeque tractatos intellegat eu eam. At salutandi maiestatis usu, eam fugit zril ut. Omnis aperiam ei his, vel sapientem accommodare id. At modo nulla partem eam, no vel tota deseruisse, nec in unum elit deterruisset."
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.06" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_switch_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="150dp"
         android:text="ACCEPT"
-        tools:layout_editor_absoluteX="568dp"
-        tools:layout_editor_absoluteY="1094dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
