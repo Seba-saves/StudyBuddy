@@ -32,8 +32,10 @@
                 android:layout_height="wrap_content"
                 android:text="name"
                 app:icon="@android:drawable/ic_menu_edit"
-                tools:layout_editor_absoluteX="84dp"
-                tools:layout_editor_absoluteY="408dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.drawerlayout.widget.DrawerLayout>
