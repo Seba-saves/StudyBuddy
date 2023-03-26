@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:scr="@drawable/baseline_android_24"
+        android:src ="@drawable/baseline_android_24"
         android:contentDescription="TODO" />
 
     <TextView
