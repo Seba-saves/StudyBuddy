@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_screen_1"
+            android:title="Edit"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="setting">
+            <menu>
+                <item
+                    android:id="@+id/nav_app_controls"
+                    android:title="app controls"/>
+                <item
+                    android:id="@+id/nav_something_cool"
+                    android:title="Something Cool"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>
