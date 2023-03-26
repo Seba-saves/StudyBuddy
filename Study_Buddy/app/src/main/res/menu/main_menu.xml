@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:title="Home"/>
+            android:title="Home"
+            android:checked="true" />
         <item
             android:id="@+id/nav_screen_1"
             android:title="Edit"/>
     </group>
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
         <item
-            android:title="setting">
+            android:title="setting"
+            android:checked="true" >
             <menu>
                 <item
                     android:id="@+id/nav_app_controls"
